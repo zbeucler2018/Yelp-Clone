@@ -1,0 +1,30 @@
+<!--
+    Zack Beucler
+    Due June 12th, 2019
+    Final Project
+-->
+<nav class="navbar navbar-light bg-dark justify-content-between">
+    <a class="navbar-brand text-light" id="navText">Yelp Food Finder!</a>
+    <form class="form-inline">
+        <input type="location" class="form-control" id="userLocation" placeholder="Zip Code or City" #newLocation>
+
+        <select class="custom-select" id="userPrice" #newPrice>
+            <option selected>Price</option>
+            <option value="1">$</option> <!-- converts '$'' into '1' , '$$' into '2', etc.-->
+            <option value="2">$$</option>
+            <option value="3">$$$</option>
+            <option value='4'>$$$$</option>
+        </select>
+
+        <select class="custom-select" id="userCat" #newCat> 
+            <option selected>Category</option>
+            <option value="newamerican">American</option> <!-- Yelp JSON only takes "newamerican" instead of American -->
+            <option value="brazilian">Brazilian</option> <!-- "brazilian" instead of Brazilian -->
+            <option value="chinese">Chinese</option> <!-- etc. -->
+            <option value="italian">Italian</option> <!-- etc. -->
+        </select>
+
+        <button class="btn btn-outline-success my-2 my-sm-0" (click)='YelpSearch(newLocation, newPrice, newCat)' type="button">Search</button>
+    </form>
+</nav>
+<br><br>

@@ -1,0 +1,31 @@
+<!--
+    Zack Beucler
+    Due June 12th, 2019
+    Final Project
+-->
+<div class="alert alert-dark container" role="alert">
+    <div class="container">
+        <div class="row">
+            <div class="col"> <!-- buisness image -->
+                <img class="card-img-top" src="{{result.thumbnailUrl}}" alt="Buisness Thumbnail" width='100px' height='200px'>
+            </div>
+            <div class="col">
+                <div class="row">
+                        <ul>
+                            <li><i class="fas fa-phone"></i>: {{result.phone}}</li>  <!--Phone-->
+                            <li><i class="fas fa-map-marked-alt"></i>: {{result.address}} {{result.location}}, {{result.state}}</li>  <!--city and state -->
+                            <li>Rating: {{result.rating}}<i class="fas fa-star"></i></li>  <!-- rating -->
+                            <li>Distance: {{ result.distance * 0.000621371 | number }} Miles away</li>  
+                            <!-- ^ yelp returns distance as meters, so this converts to miles and then rounds -->
+                                                                                        
+                        </ul>
+                    </div>
+
+                <br><br>
+                <div class="row"> <!-- link to website -->
+                    <a href="{{result.url}}" target="_blank" class="btn btn-primary btn-block"><i class="fas fa-store-alt"></i> &nbsp; Go To Business Website</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><br>

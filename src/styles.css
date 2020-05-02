@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+
+.container-fluid {
+    padding: 15px;
+}
+
+.card {
+    margin-bottom: 15px;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(23, 23, 32);
+    color: white;
+    text-align: center;
+    padding: 25px 25px 15px 25px;
+    position: fixed;
+    clear: both;
+  
+ }
+
+ .footer a {
+     text-decoration: none;
+     color: white;
+     overflow: none;
+ }
+
+ #navTitle {
+     color: whitesmoke;
+ }
+
+ .navbar-brand{
+     color: whitesmoke;
+ }
+
+
+
+ /* mostly just background styling */
+ body {
+    background-image: url("assets/images/unsplash.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ }
+
+ .card-body {
+    background-image: url("assets/images/unsplash.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ }
+
+
+ 
