@@ -29,3 +29,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # Todo:
 
 - [ ] [Deploy to Heruko](https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147)
+  - Not working because heruko shows "Not Found" when deployed ==> build is successful however
